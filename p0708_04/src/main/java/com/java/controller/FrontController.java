@@ -48,28 +48,31 @@ public class FrontController {
 		
 	}
 	
-	@RequestMapping("/memUpdate") //회원정보 수정
+	@RequestMapping("/memUpdate") //회원정보수정
 	public ModelAndView memUpdate(HttpServletRequest request) {
 		
-		String hobby[] = request.getParameterValues("hobby");
-		String hobbys="";
+		System.out.println("id : "+request.getParameter("id"));
+		System.out.println("name : "+request.getParameter("name"));
+		String[] hobby = request.getParameterValues("hobby");
+		String hobbys = "";   // game,golf,run,swim,book
 		for(int i=0;i<hobby.length;i++) {
-			if(i==0) hobbys+=""+hobby[i];
+			if(i==0) hobbys += ""+hobby[i];
 			else hobbys += ","+hobby[i];
 		}
+		System.out.println("hobbys : "+hobbys);
 		
 		ModelAndView mv = new ModelAndView();
-		mv.addObject("id", request.getParameter("id"));
-		mv.addObject("pw", request.getParameter("pw"));
-		mv.addObject("name", request.getParameter("name"));
-		mv.addObject("phone", request.getParameter("phone"));
-		mv.addObject("gender", request.getParameter("gender"));
+		mv.addObject("id",request.getParameter("id"));
+		mv.addObject("pw",request.getParameter("pw"));
+		mv.addObject("name",request.getParameter("name"));
+		mv.addObject("phone",request.getParameter("phone"));
+		mv.addObject("gender",request.getParameter("gender"));
 		mv.addObject("hobby",hobbys);
-		mv.setViewName("doMember");
+		mv.setViewName("memUpdate");
+		
 		return mv;
+	
 	}
-	
-	
 	
 	
 	
