@@ -13,11 +13,11 @@
 	<h2>입력 확인</h2>
 	<form action="memUpdate" method="post">
 		<input type="hidden" name="id" value="${id}">
-		<input type="hidden" name="id" value="${pw}">
-		<input type="hidden" name="id" value="${name}">
-		<input type="hidden" name="id" value="${phone}">
-		<input type="hidden" name="id" value="${gender}">
-		<input type="hidden" name="id" value="${hobby}">
+		<input type="hidden" name="pw" value="${pw}">
+		<input type="hidden" name="name" value="${name}">
+		<input type="hidden" name="phone" value="${phone}">
+		<input type="hidden" name="gender" value="${gender}">
+		<input type="hidden" name="hobby" value="${hobby}">
 		<table>
 			<tr>
 				<th>id</th>

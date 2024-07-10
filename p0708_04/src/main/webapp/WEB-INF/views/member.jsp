@@ -16,10 +16,10 @@
 		<input type="password" name="pw"><br>
 		
 		<label>name</label>
-		<input type="test" name="name"><br>
+		<input type="text" name="name"><br>
 
 		<label>phone</label>
-		<input type="test" name="phone"><br>
+		<input type="text" name="phone"><br>
 		
 		<input type="radio" name="gender" id= "male" value="male">남
 		<input type="radio" name="gender" id = "female" value="female">여<br>
