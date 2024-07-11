@@ -13,7 +13,6 @@
         <li><a href="form">회원가입</a></li>
         <li><a href="/logout">로그아웃</a></li>
         <li><a href="board/list">게시판</a></li>
-        <li><a href="boardList2/5">게시판2</a></li>
         <li>회원정보</li>
       </ul>
     </body>
