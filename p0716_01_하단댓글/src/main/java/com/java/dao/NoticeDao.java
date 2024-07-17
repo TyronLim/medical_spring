@@ -22,6 +22,8 @@ public interface NoticeDao {
 
 	void deleteCommentB(CommentBDto commentBDto);	// 하단댓글 삭제
 
+	void updateCommentB(CommentBDto commentBDto);	// 하단댓글수정완료
+
 	
 
 

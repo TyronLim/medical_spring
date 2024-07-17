@@ -61,6 +61,16 @@ public class CustomerController {
 		return "1";
 	}
 	
+	@RequestMapping("/commentBUpdate") // 하단댓글 삭제
+	@ResponseBody
+	public CommentBDto commentBUpdate(CommentBDto commentBDto) {
+		System.out.println("controller cno : "+commentBDto.getCno());
+		System.out.println("controller ccontent : "+commentBDto.getCcontent());
+		
+		// bno, id, cpw, ccontent
+		CommentBDto cBDto = noticeService.updateCommentB(commentBDto);
+		return cBDto;
+	}
 	
 	
 	

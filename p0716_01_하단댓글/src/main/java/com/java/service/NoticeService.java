@@ -16,4 +16,6 @@ public interface NoticeService {
 
 	void deleteCommentB(CommentBDto commentBDto);	// 하단댓글 삭제
 
+	CommentBDto updateCommentB(CommentBDto commentBDto);	// 하단댓글 수정 완료
+
 }

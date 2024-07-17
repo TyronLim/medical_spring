@@ -66,6 +66,14 @@ public class NoticeServiceImpl implements NoticeService{
 				
 		return;
 	}
+
+	@Override
+	public CommentBDto updateCommentB(CommentBDto commentBDto) {
+		System.out.println("service cno : "+commentBDto.getCno());
+		noticeDao.updateCommentB(commentBDto);
+		CommentBDto cBDto = noticeDao.selectOneCommentB(commentBDto);
+		return cBDto;
+	}
 	
 	
 	
